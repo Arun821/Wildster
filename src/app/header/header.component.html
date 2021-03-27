@@ -1,0 +1,182 @@
+<mat-toolbar >
+    <div fxHide.gt-xs>
+        <div class="menu-icon" (click)="onSidenavOpen()">
+            <div class="icon-bar"></div>
+        </div>
+    </div>
+    <div fxFlex fxLayoutAlign="center">
+        <a routerLink="">Home</a>
+    </div>
+    <div fxFlex fxLayoutAlign="space-evenly" fxHide.xs>
+        <ul class="navigation-item" fxLayout fxLayoutGap="15px">
+            <!-- <li>
+                <a   (click)="showModal()">Login</a>
+            </li>
+            <nz-modal [(nzVisible)]="isVisible" nzTitle="The first Modal"
+             (nzOnCancel)="handleCancel()"
+             (nzOnOk)="handleOk()">
+                <ng-container *nzModalContent>
+                  <div class="container">
+                    <div class="card">
+                      <div class="inner-box" id="card">
+                        <div class="card-front">
+                          <h1>Login</h1>
+                          <form class="example-form">
+                            <mat-form-field class="example-full-width">
+                              <mat-label>Email</mat-label>
+                              <input matInput placeholder="Ex. Pizza" value="Sushi">
+                            </mat-form-field>
+                          
+                            <mat-form-field class="example-full-width">
+                              <mat-label>Password</mat-label>
+                              <textarea matInput placeholder="Ex. It makes me feel..."></textarea>
+                            </mat-form-field>
+                            <button>Login</button>
+                      </form>
+                          <button class="btn" onclick="openReg()">Sign Up</button>
+                        </div>
+                        <div class="card-back">
+                          <h1>New User</h1>
+                          <form class="example-form">
+                            <mat-form-field class="example-full-width">
+                              <mat-label>Name</mat-label>
+                              <input matInput placeholder="Ex. Pizza" value="Sushi">
+                            </mat-form-field>
+                          
+                            <mat-form-field class="example-full-width">
+                              <mat-label>Phone</mat-label>
+                              <textarea matInput placeholder="Ex. It makes me feel..."></textarea>
+                            </mat-form-field>
+                            <mat-form-field class="example-full-width">
+                                <mat-label>Email</mat-label>
+                                <textarea matInput placeholder="Ex. It makes me feel..."></textarea>
+                            </mat-form-field>
+                            
+                            <mat-form-field class="example-full-width">
+                                <mat-label>Password</mat-label>
+                                <textarea matInput placeholder="Ex. It makes me feel..."></textarea>
+                            </mat-form-field>
+                            <mat-form-field class="example-full-width">
+                                <mat-label>Confirm Password</mat-label>
+                                <textarea matInput placeholder="Ex. It makes me feel..."></textarea>
+                            </mat-form-field>
+                            <button>Regiser</button>
+                          </form>
+                          <button class="btn" onclick="openLogin()">Login</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </ng-container>
+              </nz-modal> -->
+            <li>
+                <a routerLink="cart">Cart</a>
+            </li>
+            <li>
+                <a routerLink="new">Add Products</a>
+            </li>
+            <li>
+              <a routerLink="sign">Sign Up</a>
+            </li>
+        </ul>
+    </div>
+</mat-toolbar>
+
+<mat-toolbar class="secondToolbar" [ngClass] = "{'mat-elevation-z5' : true, 'sticky' : isSticky}">
+    <div fxHide.gt-xs>
+        <div class="menu-icon" (click)="onSidenavOpen()">
+            <div class="icon-bar"></div>
+        </div>
+    </div>
+    <div fxFlex fxLayoutAlign="center">
+        <a href="">Home</a>
+    </div>
+    <div fxFlex fxLayoutAlign="space-evenly" fxHide.xs>
+        <ul class="navigation-item" fxLayout fxLayoutGap="15px">
+            <!-- <li>
+                <a  (click)="showModal()">Login</a>
+            </li>
+            <nz-modal [(nzVisible)]="isVisible" 
+            nzTitle="The first Modal" 
+            (nzOnCancel)="handleCancel()" 
+            (nzOnOk)="handleOk()">
+                <ng-container *nzModalContent>
+                  <div class="container">
+                    <div class="card">
+                      <div class="inner-box" id="card">
+                        <div class="card-front">
+                          <h1>Login</h1>
+                          <form class="example-form">
+                            <mat-form-field class="example-full-width">
+                              <mat-label>Email</mat-label>
+                              <input matInput placeholder="Ex. Pizza" value="Sushi">
+                            </mat-form-field>
+                          
+                            <mat-form-field class="example-full-width">
+                              <mat-label>Password</mat-label>
+                              <textarea matInput placeholder="Ex. It makes me feel..."></textarea>
+                            </mat-form-field>
+                            <button>Login</button>
+                      </form>
+                          <button class="btn" onclick="openReg()">Sign Up</button>
+                        </div>
+                        <div class="card-back">
+                          <h1>New User</h1>
+                          <form class="example-form">
+                            <mat-form-field class="example-full-width">
+                              <mat-label>Name</mat-label>
+                              <input matInput placeholder="Ex. Pizza" value="Sushi">
+                            </mat-form-field>
+                          
+                            <mat-form-field class="example-full-width">
+                              <mat-label>Phone</mat-label>
+                              <textarea matInput placeholder="Ex. It makes me feel..."></textarea>
+                            </mat-form-field>
+                            <mat-form-field class="example-full-width">
+                                <mat-label>Email</mat-label>
+                                <textarea matInput placeholder="Ex. It makes me feel..."></textarea>
+                            </mat-form-field>
+                            
+                            <mat-form-field class="example-full-width">
+                                <mat-label>Password</mat-label>
+                                <textarea matInput placeholder="Ex. It makes me feel..."></textarea>
+                            </mat-form-field>
+                            <mat-form-field class="example-full-width">
+                                <mat-label>Confirm Password</mat-label>
+                                <textarea matInput placeholder="Ex. It makes me feel..."></textarea>
+                            </mat-form-field>
+                            <button>Regiser</button>
+                          </form>
+                          <button class="btn" onclick="openLogin()">Login</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </ng-container>
+              </nz-modal> -->
+            <li>
+                <a routerLink="cart">Cart</a>
+            </li>
+            <li>
+                <a routerLink="new">Add Products</a>
+            </li>
+            <li>
+              <a routerLink="sign">Sign Up</a>
+            </li>
+        </ul>
+    </div>
+</mat-toolbar>
+<div class="model fade" id="signuppage">
+    <div class="model-dialog">
+        <div class="model-content">
+            <div class="model-header text-center">
+                <h4 class="model-title text-cen w-100 font-weight-bold"></h4>
+                <button type="button" class="close" data-dismiss="model" aria-lable="close">&times;</button>
+            </div>
+            <div class="model-body mx-3">
+
+            </div>
+        </div>
+    </div>
+</div>
+<router-outlet></router-outlet>

@@ -1,0 +1,191 @@
+<!-- <div class="close">
+  <button mat-button mat-dialog-close mat-dialog-close="true"><mat-icon>clear</mat-icon></button>
+</div>
+<div class="container">
+  
+      <mat-card>
+        <mat-tab-group mat-stretch-tabs backgroundColor="primary" animationDuration="0ms">
+          <mat-tab label="Login">
+                <form class="example-form">
+                      <mat-form-field class="example-full-width">
+                        <mat-label>Email</mat-label>
+                        <input matInput placeholder="Ex. Pizza" value="Sushi">
+                      </mat-form-field>
+                    
+                      <mat-form-field class="example-full-width">
+                        <mat-label>Password</mat-label>
+                        <textarea matInput placeholder="Ex. It makes me feel..."></textarea>
+                      </mat-form-field>
+                </form>
+          </mat-tab>
+          <mat-tab label="Sign up">
+                <form class="example-form">
+                      <mat-form-field class="example-full-width">
+                        <mat-label>Name</mat-label>
+                        <input matInput placeholder="Ex. Pizza" value="Sushi">
+                      </mat-form-field>
+                    
+                      <mat-form-field class="example-full-width">
+                        <mat-label>Phone</mat-label>
+                        <textarea matInput placeholder="Ex. It makes me feel..."></textarea>
+                      </mat-form-field>
+                      <mat-form-field class="example-full-width">
+                            <mat-label>Email</mat-label>
+                            <textarea matInput placeholder="Ex. It makes me feel..."></textarea>
+                          </mat-form-field>
+                      
+                          <mat-form-field class="example-full-width">
+                            <mat-label>Password</mat-label>
+                            <textarea matInput placeholder="Ex. It makes me feel..."></textarea>
+                          </mat-form-field>
+                          <mat-form-field class="example-full-width">
+                            <mat-label>Confirm Password</mat-label>
+                            <textarea matInput placeholder="Ex. It makes me feel..."></textarea>
+                          </mat-form-field>
+                    </form>
+          </mat-tab>
+        </mat-tab-group>
+      </mat-card>
+</div> -->
+
+<!-- <section class="mx-2 pb-3">
+      
+  <ul class="nav nav-tabs md-tabs" id="myTabMD" role="tablist">
+    <li class="nav-item waves-effect waves-light">
+      <a class="nav-link " id="home-tab-md" data-toggle="tab" href="#home-md" role="tab" aria-controls="home-md" aria-selected="true">Login</a>
+    </li>
+    <li class="nav-item waves-effect waves-light">
+      <a class="nav-link active" id="profile-tab-md" data-toggle="tab" href="#profile-md" role="tab" aria-controls="profile-md" aria-selected="false">Sign Up</a>
+    </li>
+    
+  </ul>
+  <div class="tab-content card pt-5" id="myTabContentMD">
+    <div class="tab-pane fade " id="home-md" role="tabpanel" aria-labelledby="home-tab-md">
+      <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro
+        synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher
+        retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip
+        placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</p>
+    </div>
+    <div class="tab-pane fade show active" id="profile-md" role="tabpanel" aria-labelledby="profile-tab-md">
+      <p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1
+        labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft
+        beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad
+        vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit. Keytar
+        helvetica VHS salvia yr, vero magna velit sapiente labore stumptown. Vegan fanny pack odio cillum wes
+        anderson 8-bit, sustainable jean shorts beard ut DIY ethical culpa terry richardson biodiesel. Art party
+        scenester stumptown, tumblr butcher vero sint qui sapiente accusamus tattooed echo park.</p>
+    </div>
+    <div class="tab-pane fade" id="contact-md" role="tabpanel" aria-labelledby="contact-tab-md">
+      <p>Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro
+        fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone
+        skateboard locavore carles etsy salvia banksy hoodie helvetica. DIY synth PBR banksy irony. Leggings
+        gentrify squid 8-bit cred pitchfork. Williamsburg banh mi whatever gluten-free, carles pitchfork
+        biodiesel fixie etsy retro mlkshk vice blog. Scenester cred you probably haven't heard of them, vinyl
+        craft beer blog stumptown. Pitchfork sustainable tofu synth chambray yr.</p>
+    </div>
+  </div>
+
+</section> -->
+
+
+
+  <div class="containe">
+    <div class="card">
+      <div class="inner-box" id="card">
+        <div class="card-front" fxLayout="column" fxLayoutGap="20px">
+          <h1>Login</h1>
+          <div class="social" fxLayout="column" fxLayoutGap="20px">
+            <label for="">Login With</label>
+            <button class="btn1">Login with google </button>
+            <button class="btn2">Login with Facebook </button>
+            
+          </div>
+          <form class="example-form" fxLayout="column" fxLayoutGap="20px">
+            <input type="text" placeholder="Email/Mobile No">
+            <input type="password" placeholder="Password">
+            <button>Login</button>
+            <button>Forget Password</button>
+          </form>
+          <button class="btn" onclick="openReg()">Are you new here ?</button>
+        </div>
+        <div class="card-back">
+          <h1>New User</h1>
+          <!-- <form fxLayout="column" fxLayoutGap="20px">
+            <input type="text" name="" id="" placeholder="Name">
+            <input type="email" name="" id="" placeholder="Email">
+            <input type="password" name="" id="" placeholder="Password">
+            <input type="password" name="" id="" placeholder="Confirm Password">
+            <button (click)="register()">Sign Up</button>
+          </form> -->
+
+          <form nz-form [formGroup]="validateForm" (ngSubmit)="submitForm(validateForm.value)">
+            
+            <nz-form-item> 
+              <nz-form-control  nzHasFeedback nzValidatingTip="Validating..." [nzErrorTip]="userErrorTpl">
+                <input nz-input formControlName="userName" placeholder="Name" />
+                <ng-template #userErrorTpl let-control>
+                  <ng-container *ngIf="control.hasError('required')">
+                    Please input your username!
+                  </ng-container>
+                  <ng-container *ngIf="control.hasError('duplicated')">
+                    The username is redundant!
+                  </ng-container>
+                </ng-template>
+              </nz-form-control>
+            </nz-form-item>
+
+            <nz-form-item>
+              <nz-form-control  nzHasFeedback [nzErrorTip]="emailErrorTpl">
+                <input nz-input formControlName="email" placeholder="Email" type="email" />
+                <ng-template #emailErrorTpl let-control>
+                  <ng-container *ngIf="control.hasError('email')">
+                    The input is not valid E-mail!
+                  </ng-container>
+                  <ng-container *ngIf="control.hasError('required')">
+                    Please input your E-mail!
+                  </ng-container>
+                </ng-template>
+              </nz-form-control>
+            </nz-form-item>
+
+            <nz-form-item>
+              <nz-form-control  nzHasFeedback [nzErrorTip]="passwordErrorTpl">
+                <input nz-input type="password" placeholder="Password" formControlName="password" (ngModelChange)="validateConfirmPassword()" />
+                <ng-template #passwordErrorTpl let-control>
+                  <ng-container *ngIf="control.hasError('required')">
+                    Please enter your password (minimum 6 characters)!
+                  </ng-container>
+                  <ng-container *ngIf="control.hasError('minLength')">
+                    Password must cotain atleast 6 characters
+                  </ng-container>
+                </ng-template>
+              </nz-form-control>
+            </nz-form-item>
+
+            <nz-form-item>
+              <nz-form-control nzHasFeedback [nzErrorTip]="cpasswordErrorTpl">
+                <input nz-input type="password" formControlName="confirm" placeholder="Confirm your Password" />
+                <ng-template #cpasswordErrorTpl let-control>
+                  <ng-container *ngIf="control.hasError('required')">
+                    Please confirm your password!
+                  </ng-container>
+                  <ng-container *ngIf="control.hasError('confirm')">
+                    Password is inconsistent!
+                  </ng-container>
+                </ng-template>
+              </nz-form-control>
+            </nz-form-item>
+            
+            <nz-form-item>
+              <nz-form-control >
+                <button nz-button nzType="primary" [disabled]="!validateForm.valid">Submit</button>
+                <button nz-button (click)="resetForm($event)">Reset</button>
+              </nz-form-control>
+            </nz-form-item>
+          </form>
+          <button class="btn" onclick="openLogin()">Login</button>
+        </div>
+      </div>
+    </div>
+  </div>
+

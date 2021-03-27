@@ -1,0 +1,221 @@
+.body{
+  width: 100%;
+  /* background-color: rgba(4, 255, 29, 0.37); */
+  margin-top: -50px;
+}
+.slide-1{
+    /* background-color: aqua; */
+    width: 100%;
+}
+.product-head{
+  width: 100%;
+  /* background-color: rgba(110, 255, 81, 0.336); */
+  overflow: auto;
+  height: 100%;
+}
+/* .product{
+  background-color: rgb(126, 83, 18);
+} */
+.product-1{
+  width: 100%;
+  height: auto;
+  /* background-color: aqua; */
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.products-2, .product-3, .product-4, .product-5{
+  width: 100%;
+  height: auto;
+  /* background-color: blue; */
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.handicrafts{
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  /* background-color: cornflowerblue; */
+  overflow: hidden;
+}
+.handicraft{
+  width: 200px;
+  height: 250px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 5px;
+  /* background-color: rgb(0, 238, 255); */
+}
+.spice{
+  width: 200px;
+  height: 250px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 5px;
+  /* background-color: blue; */
+}
+.spices{
+  position: relative;
+  display: flex;
+  /* align-items: center;
+  justify-content: center; */
+  flex-wrap: wrap;
+  /* background-color: coral; */
+  overflow: hidden;
+}
+.but{
+  width: 100px;
+  height: 40px;
+  position: relative;
+  display: flex;
+  top: 150px;
+  
+}
+.btn-1{
+  position: relative;
+  display: flex;
+  top: 8px;
+  text-align: center;
+  align-content: center;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  height: 40px;
+}
+.spice a{
+  /* background-color: aqua; */
+  width: 100px;
+}
+.launches, .pro-1 ,.pro-2 ,.pro-3{
+  width: 100%;
+  /* background-color: white; */
+  height: 570px;
+  /* border: 1px solid black; */
+  box-shadow: black;
+}
+.pro-1 ,.pro-2,.pro-3{
+  padding: 2px;
+}
+.upcomming{
+  width: 100%;
+  /* background-color: white; */
+  height: 570px;
+  /* border: .5px solid rgba(0, 0, 0, 0.445); */
+}
+.product-1 img{
+  width: 100px;
+  height: 200px;
+}
+.slide-2{
+  height: 350px;
+  margin: 5px;
+}
+.new{
+  height: 250px;
+  margin: 5px;
+  /* background-color: tomato; */
+}
+/* h2{
+  background-color: burlywood;
+}
+.pro-deatils{
+  background-color: red;
+} */
+
+img{
+  width: 40%;
+  height: 40%;
+  /* background-color: white; */
+}
+
+/* .carousel-cell {
+  width: 66%;
+  height: 200px;
+  margin-right: 10px;
+  background: #8C8;
+  border-radius: 5px;
+  counter-increment: carousel-cell;
+} */
+
+/* cell number */
+/* .carousel-cell:before {
+  display: block;
+  text-align: center;
+  content: counter(carousel-cell);
+  line-height: 200px;
+  font-size: 80px;
+  color: white;
+} */
+
+/* gallery focus */
+/* .flickity-enabled:focus .flickity-viewport {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+} */
+
+
+/* owl-carousel-o{
+  background-color: rgb(255, 0, 242);
+  width: 100%;
+} */
+@media(max-width:700px){
+  .product{
+    width: 100%;
+    /* background-color: rgb(255, 0, 242); */
+    overflow: 300px;
+    
+  }
+  .slide-2{
+    height: 200px;
+    /* background-color: saddlebrown; */
+  }
+  .launches{
+    width: 100%;
+    /* background-color: white; */
+    height: 350px;
+    /* border: 1px solid black; */
+  }
+  .upcomming{
+    width: 100%;
+    /* background-color: white; */
+    height: 350px;
+    /* border: .5px solid rgba(0, 0, 0, 0.445); */
+  }
+  .products-2 .pro-1 ,.pro-2 ,.pro-3{
+    width: 100%;
+  }
+  .spices{
+    overflow: hidden;
+    height: 520px;
+  }
+  .spice{
+    width: 100%;
+   
+  }
+  .handicrafts{
+    overflow: hidden;
+    height: 520px;
+  }
+  .handicraft{
+    width: 100%;
+  }
+  .pro-2{
+    height: 570px;
+  }
+  .btn-1{
+    visibility: visible;
+    width: 100%;
+    text-align: center;
+  }
+}

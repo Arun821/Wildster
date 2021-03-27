@@ -1,0 +1,33 @@
+<div class="body">
+      <div class="container">
+            <mat-card fxLayout="column">
+                  <h1>Add New Products</h1>
+                  <div class="product">
+                        <form action="">
+                              <mat-form-field appearance="fill" class="example-full-width">
+                                    <mat-label>Select Category</mat-label>
+                                    <mat-select>
+                                      <mat-option *ngFor="let category of category" [value]="category">
+                                        {{category}}
+                                      </mat-option>
+                                    </mat-select>
+                              </mat-form-field>
+                              <mat-form-field class="example-full-width">
+                                    <mat-label>Product Name</mat-label>
+                                    <input matInput  >
+                              </mat-form-field>
+                                
+                              <mat-form-field class="example-full-width">
+                                    <mat-label>Discription</mat-label>
+                                    <textarea matInput></textarea>
+                              </mat-form-field>
+                              <mat-form-field class="example-full-width">
+                                    <mat-label>Price</mat-label>
+                                    <input type="number" matInput >
+                              </mat-form-field>
+                              <button mat-raised-button color="primary">Add</button>
+                        </form>
+                  </div>
+            </mat-card>
+      </div>
+</div>

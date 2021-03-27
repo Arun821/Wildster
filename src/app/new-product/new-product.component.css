@@ -1,0 +1,39 @@
+.body{
+      
+      padding: 20px;
+      height: 529px;
+}
+.container{
+      background-color:transparent;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+mat-card{
+      background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(../../assets/wildster.jpg);
+      
+      background-size: contain;
+      background-position: center;
+      
+      background-repeat: no-repeat;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: transparent;
+      width: 50%;
+      box-shadow: 0 0 40px 20px rgba(0, 0, 0, 0.4);
+}
+.example-full-width {
+      width: 100%;
+     
+    }
+.product{
+      /* background: linear-gradient(rgba(0, 0, 255, 0.692),rgba(255, 0, 0, 0.685)) ; */
+      width: 100%;
+      padding: 20px;
+}
+mat-label{
+      color: azure;
+}
